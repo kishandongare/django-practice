@@ -36,3 +36,5 @@ The following diagram illustrates how each of the components of the MVT pattern 
 ![image](https://user-images.githubusercontent.com/66677660/138485489-395d1a7b-badd-4ecc-96cb-040e26b6beaa.png)
 
 The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user.
+
+# Installation of Django

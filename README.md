@@ -6,3 +6,24 @@ Django is a Python-based web framework that allows you to quickly create efficie
 2.Used by Top MNCs and Companies, such as Instagram, Disqus, Spotify, Youtube, Bitbucket, Dropbox, etc. and the list is never-ending.
 3.Easiest Framework to learn, rapid development and Batteries fully included.
 4.The last but not least reason to learn Django is Python, Python has huge library and features such as Web Scrapping, Machine Learning, Image Processing, Scientific Computing, etc. One can integrate it all this with web application and do lots and lots of advance stuff.
+# MVC Pattern
+Model View Controller or MVC as it is popularly called, is a software design pattern for developing web applications. A Model View Controller pattern is made up of the following three parts −
+
+Model − The lowest level of the pattern which is responsible for maintaining data.
+
+View − This is responsible for displaying all or a portion of the data to the user.
+
+Controller − Software Code that controls the interactions between the Model and View.
+
+MVC is popular as it isolates the application logic from the user interface layer and supports separation of concerns. Here the Controller receives all requests for the application and then works with the Model to prepare any data needed by the View. The View then uses the data prepared by the Controller to generate a final presentable response. The MVC abstraction can be graphically represented as follows.
+![image](https://user-images.githubusercontent.com/66677660/138484939-ef9ca7ce-e14a-40d3-887b-88aa71aad54d.png)
+>The Model
+The model is responsible for managing the data of the application. It responds to the request from the view and it also responds to instructions from the controller to update itself.
+
+>The View
+It means presentation of data in a particular format, triggered by a controller's decision to present the data. They are script-based templating systems like JSP, ASP, PHP and very easy to integrate with AJAX technology.
+
+>The Controller
+The controller is responsible for responding to the user input and perform interactions on the data model objects. The controller receives the input, it validates the input and then performs the business operation that modifies the state of the data model.
+
+Struts2 is a MVC based framework. In the coming chapters, let us see how we can use the MVC methodology within Struts2.

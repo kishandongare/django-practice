@@ -26,4 +26,13 @@ It means presentation of data in a particular format, triggered by a controller'
 >The Controller
 The controller is responsible for responding to the user input and perform interactions on the data model objects. The controller receives the input, it validates the input and then performs the business operation that modifies the state of the data model.
 
-Struts2 is a MVC based framework. In the coming chapters, let us see how we can use the MVC methodology within Struts2.
+Struts2 is a MVC based framework.
+
+# MVT Pattern
+
+The Model-View-Template (MVT) is slightly different from MVC. In fact the main difference between the two patterns is that Django itself takes care of the Controller part (Software Code that controls the interactions between the Model and View), leaving us with the template. The template is a HTML file mixed with Django Template Language (DTL).
+
+The following diagram illustrates how each of the components of the MVT pattern interacts with each other to serve a user request −
+![image](https://user-images.githubusercontent.com/66677660/138485489-395d1a7b-badd-4ecc-96cb-040e26b6beaa.png)
+
+The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user.

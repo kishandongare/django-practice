@@ -49,9 +49,13 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 # Ubuntu installation Django
 
 > kishan@kishan25:~$ python -V
+
 > Python 2.7.18
+
 > kishan@kishan25:~$ python3 -V
+
 > Python 3.8.10
+
 > kishan@kishan25:~$ ls
 
 > kishan@kishan25:~$ cd django

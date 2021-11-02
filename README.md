@@ -66,3 +66,14 @@ kishan@kishan25:~/django$ . venv/bin/activate
 
 (venv) kishan@kishan25:~/django$ ls
 main  venv
+
+(venv) kishan@kishan25:~/django$ cd main
+(venv) kishan@kishan25:~/django/main$ ls
+main  manage.py
+
+(venv) kishan@kishan25:~/django/main$ python manage.py runserver
+
+November 02, 2021 - 17:01:58
+Django version 3.2.9, using settings 'main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.

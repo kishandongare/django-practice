@@ -48,32 +48,32 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 
 # Ubuntu installation Django
 
-kishan@kishan25:~$ python -V
-Python 2.7.18
-kishan@kishan25:~$ python3 -V
-Python 3.8.10
-kishan@kishan25:~$ ls
+> kishan@kishan25:~$ python -V
+> Python 2.7.18
+> kishan@kishan25:~$ python3 -V
+> Python 3.8.10
+> kishan@kishan25:~$ ls
 
-kishan@kishan25:~$ cd django
+> kishan@kishan25:~$ cd django
 
-kishan@kishan25:~/django$ sudo apt install python3-virtualenv
+> kishan@kishan25:~/django$ sudo apt install python3-virtualenv
 
-kishan@kishan25:~/django$ virtualenv venv
+> kishan@kishan25:~/django$ virtualenv venv
 
-kishan@kishan25:~/django$ . venv/bin/activate
+> kishan@kishan25:~/django$ . venv/bin/activate
 
-(venv) kishan@kishan25:~/django$ pip install django
+> (venv) kishan@kishan25:~/django$ pip install django
 
-(venv) kishan@kishan25:~/django$ django-admin startproject main
+> (venv) kishan@kishan25:~/django$ django-admin startproject main
 
-(venv) kishan@kishan25:~/django$ ls
+> (venv) kishan@kishan25:~/django$ ls
 main  venv
 
-(venv) kishan@kishan25:~/django$ cd main
-(venv) kishan@kishan25:~/django/main$ ls
+> (venv) kishan@kishan25:~/django$ cd main
+> (venv) kishan@kishan25:~/django/main$ ls
 main  manage.py
 
-(venv) kishan@kishan25:~/django/main$ python manage.py runserver
+> (venv) kishan@kishan25:~/django/main$ python manage.py runserver
 
 November 02, 2021 - 17:01:58
 Django version 3.2.9, using settings 'main.settings'

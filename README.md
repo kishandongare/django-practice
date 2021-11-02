@@ -44,3 +44,25 @@ https://docs.djangoproject.com/en/3.2/howto/windows/
 
 >ubuntu
 https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-18-04
+
+
+# Ubuntu installation Django
+kishan@kishan25:~$ python -V
+Python 2.7.18
+kishan@kishan25:~$ python3 -V
+Python 3.8.10
+kishan@kishan25:~$ ls
+
+kishan@kishan25:~$ cd django
+kishan@kishan25:~/django$ sudo apt install python3-virtualenv
+
+kishan@kishan25:~/django$ virtualenv venv
+
+kishan@kishan25:~/django$ . venv/bin/activate
+
+(venv) kishan@kishan25:~/django$ pip install django
+
+(venv) kishan@kishan25:~/django$ django-admin startproject main
+
+(venv) kishan@kishan25:~/django$ ls
+main  venv

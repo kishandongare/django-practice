@@ -85,7 +85,7 @@ Django version 3.2.9, using settings 'main.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 
-> (venv) kishan@kishan25:~/django$ django-admin startapp hello_word     (here hello_word is a app)
+> (venv) kishan@kishan25:~/django$ django-admin startapp hello_world     (here hello_word is a app)
 
 # pycharm setup
 create new project and virtual environment (first is project name and venv folder)

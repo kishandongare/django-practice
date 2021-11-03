@@ -111,5 +111,6 @@ Quit the server with CONTROL-C.
 
 > (venv) kishan@kishan25:~/myapp$ django-admin startapp techapp     (actual app)
 
-
+>> create urls.py file in techapp
+>> create funtion in view.py
 

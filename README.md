@@ -87,12 +87,18 @@ Quit the server with CONTROL-C.
 # pycharm setup
 create new project and virtual environment
 Terminal:
+
 > (venv) kishan@kishan25:~/myapp$ pip install django
+
 > (venv) kishan@kishan25:~/myapp$  django-admin startproject main
+
 >  (venv) kishan@kishan25:~/myapp$ cd main
+
 > (venv) kishan@kishan25:~/myapp/main$ ls
 main  manage.py
+
 > (venv) kishan@kishan25:~/myapp/main$ python manage.py runserver
+
 >
 November 03, 2021 - 06:31:59
 Django version 3.2.9, using settings 'main.settings'

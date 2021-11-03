@@ -68,12 +68,13 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 
 > (venv) kishan@kishan25:~/django$ pip install django
 
-> (venv) kishan@kishan25:~/django$ django-admin startproject main
+> (venv) kishan@kishan25:~/django$ django-admin startproject main       (here main is actual control of our app)
 
 > (venv) kishan@kishan25:~/django$ ls
 main  venv
 
 > (venv) kishan@kishan25:~/django$ cd main
+
 > (venv) kishan@kishan25:~/django/main$ ls
 main  manage.py
 
@@ -84,13 +85,15 @@ Django version 3.2.9, using settings 'main.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 
+> (venv) kishan@kishan25:~/django$ django-admin startapp hello_word     (here hello_word is a app)
+
 # pycharm setup
-create new project and virtual environment
+create new project and virtual environment (first is project name and venv folder)
 Terminal:
 
 > (venv) kishan@kishan25:~/myapp$ pip install django
 
-> (venv) kishan@kishan25:~/myapp$  django-admin startproject main
+> (venv) kishan@kishan25:~/myapp$  django-admin startproject main       (main is actual project name)
 
 >  (venv) kishan@kishan25:~/myapp$ cd main
 
@@ -106,7 +109,7 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 > 
 
-> (venv) kishan@kishan25:~/myapp$ django-admin startapp techapp
+> (venv) kishan@kishan25:~/myapp$ django-admin startapp techapp     (actual app)
 
 
 

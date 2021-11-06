@@ -88,7 +88,7 @@ Quit the server with CONTROL-C.
 > (venv) kishan@kishan25:~/django$ django-admin startapp hello_world     (here hello_word is a app)
 
 # pycharm setup
-create new project and virtual environment (first is project name and venv folder)
+create new project and virtual environment (first is project name and venv folder) in 
 Terminal:
 
 > (venv) kishan@kishan25:~/myapp$ pip install django
@@ -97,8 +97,7 @@ Terminal:
 
 >  (venv) kishan@kishan25:~/myapp$ cd main
 
-> (venv) kishan@kishan25:~/myapp/main$ ls
-main  manage.py
+> (venv) kishan@kishan25:~/myapp/main$ django-admin startapp techapp     (actual app)
 
 > (venv) kishan@kishan25:~/myapp/main$ python manage.py runserver
 
@@ -109,7 +108,7 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 > 
 
-> (venv) kishan@kishan25:~/myapp$ django-admin startapp techapp     (actual app)
+
 
 >> create urls.py file in techapp
 

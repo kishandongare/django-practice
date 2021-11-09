@@ -115,3 +115,5 @@ Quit the server with CONTROL-C.
 >> create funtion in view.py
 
 >> also mention path in main urls.py
+
+# intro to django

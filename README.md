@@ -117,3 +117,5 @@ Quit the server with CONTROL-C.
 >> also mention path in main urls.py
 
 # intro to django
+
+https://www.djangoproject.com/start/

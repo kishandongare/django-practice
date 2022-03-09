@@ -119,3 +119,7 @@ Quit the server with CONTROL-C.
 # intro to django
 
 https://www.djangoproject.com/start/
+
+# creating project
+
+https://www.tutorialspoint.com/django/django_creating_project.htm

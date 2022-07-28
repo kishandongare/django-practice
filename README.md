@@ -5,9 +5,13 @@ When you’re building a website, you always need a similar set of components: a
 
 # Why Django Framework ?
 1.Excellent documentation and high scalability.
+
 2.Used by Top MNCs and Companies, such as Instagram, Disqus, Spotify, Youtube, Bitbucket, Dropbox, etc. and the list is never-ending.
+
 3.Easiest Framework to learn, rapid development and Batteries fully included.
+
 4.The last but not least reason to learn Django is Python, Python has huge library and features such as Web Scrapping, Machine Learning, Image Processing, Scientific Computing, etc. One can integrate it all this with web application and do lots and lots of advance stuff.
+
 # MVC Pattern
 Model View Controller or MVC as it is popularly called, is a software design pattern for developing web applications. A Model View Controller pattern is made up of the following three parts −
 

@@ -77,6 +77,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 > (venv) kishan@kishan25:~/django$ django-admin startproject crudexample 
 
 > (venv) kishan@kishan25:~/django$ ls
+
 > crudexample  venv
 
 > (venv) kishan@kishan25:~/django$ cd crudexample
@@ -84,6 +85,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 > (venv) kishan@kishan25:~/django/crudexample$ python3 manage.py startapp employee
 
 > (venv) kishan@kishan25:~/django/crudexample$ ls 
+
 > crudexample employee  manage.py
 
 > (venv) kishan@kishan25:~/django/crudexample$ python3 manage.py runserver

@@ -129,3 +129,6 @@ https://www.djangoproject.com/start/
 # creating project
 
 https://www.tutorialspoint.com/django/django_creating_project.htm
+
+![image](https://user-images.githubusercontent.com/66677660/184409295-da6a4e5d-8de4-4ac5-9a93-37b0cf07db52.png)
+

@@ -74,24 +74,29 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 
 > (venv) kishan@kishan25:~/django$ pip install django
 
-> (venv) kishan@kishan25:~/django$ django-admin startproject main       (here main is actual control of our app)
+> (venv) kishan@kishan25:~/django$ django-admin startproject crudexample      (here main is actual control of our app)
 
 > (venv) kishan@kishan25:~/django$ ls
-main  venv
+> crudexample  venv
 
-> (venv) kishan@kishan25:~/django$ cd main
+> (venv) kishan@kishan25:~/django$ cd crudexample
 
-> (venv) kishan@kishan25:~/django/main$ ls
-main  manage.py
+> (venv) kishan@kishan25:~/django/crudexample$ python3 manage.py startapp employee
 
-> (venv) kishan@kishan25:~/django/main$ python manage.py runserver
+> (venv) kishan@kishan25:~/django/crudexample$ ls 
+> crudexample employee  manage.py
+
+> (venv) kishan@kishan25:~/django/crudexample$ python3 manage.py runserver
 
 November 02, 2021 - 17:01:58
-Django version 3.2.9, using settings 'main.settings'
+Django version 3.2.9, using settings 'crudexample.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 
-> (venv) kishan@kishan25:~/django$ django-admin startapp hello_world     (here hello_word is a app)
+
+# Django Project Structure
+
+![image](https://user-images.githubusercontent.com/66677660/184409295-da6a4e5d-8de4-4ac5-9a93-37b0cf07db52.png)
 
 # pycharm setup
 create new project and virtual environment (first is project name and venv folder) in 
@@ -114,14 +119,6 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 > 
 
-
-
->> create urls.py file in techapp
-
->> create funtion in view.py
-
->> also mention path in main urls.py
-
 # intro to django
 
 https://www.djangoproject.com/start/
@@ -130,5 +127,6 @@ https://www.djangoproject.com/start/
 
 https://www.tutorialspoint.com/django/django_creating_project.htm
 
-![image](https://user-images.githubusercontent.com/66677660/184409295-da6a4e5d-8de4-4ac5-9a93-37b0cf07db52.png)
+
+
 

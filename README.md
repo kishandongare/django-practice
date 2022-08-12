@@ -74,7 +74,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 
 > (venv) kishan@kishan25:~/django$ pip install django
 
-> (venv) kishan@kishan25:~/django$ django-admin startproject crudexample      (here main is actual control of our app)
+> (venv) kishan@kishan25:~/django$ django-admin startproject crudexample 
 
 > (venv) kishan@kishan25:~/django$ ls
 > crudexample  venv

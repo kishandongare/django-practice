@@ -106,13 +106,13 @@ Terminal:
 
 > (venv) kishan@kishan25:~/myapp$ pip install django
 
-> (venv) kishan@kishan25:~/myapp$  django-admin startproject main       (main is actual project name)
+> (venv) kishan@kishan25:~/myapp$  django-admin startproject crudexample
 
->  (venv) kishan@kishan25:~/myapp$ cd main
+>  (venv) kishan@kishan25:~/myapp$ cd crudexample
 
-> (venv) kishan@kishan25:~/myapp/main$ django-admin startapp techapp     (actual app)
+> (venv) kishan@kishan25:~/myapp/crudexample$ django-admin startapp crud
 
-> (venv) kishan@kishan25:~/myapp/main$ python manage.py runserver
+> (venv) kishan@kishan25:~/myapp/crudexample$ python manage.py runserver
 
 >
 November 03, 2021 - 06:31:59

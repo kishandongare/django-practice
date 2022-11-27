@@ -129,6 +129,7 @@ https://www.djangoproject.com/start/
 
 https://www.tutorialspoint.com/django/django_creating_project.htm
 
+#makemigration vs Migrates
 
-
+https://www.javatpoint.com/django-database-migrations
 

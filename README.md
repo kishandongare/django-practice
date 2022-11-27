@@ -133,3 +133,5 @@ https://www.tutorialspoint.com/django/django_creating_project.htm
 
 https://www.javatpoint.com/django-database-migrations
 
+# Django render()
+https://www.educative.io/answers/how-to-render-data-in-django

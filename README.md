@@ -136,9 +136,34 @@ https://www.javatpoint.com/django-database-migrations
 # Django render()
 https://www.educative.io/answers/how-to-render-data-in-django
 
-# WSGI(Web Server Gateway Interface)
-https://www.liquidweb.com/kb/what-is-wsgi/
-
 # gunicorn
+Gunicorn is detailed as "A Python WSGI HTTP Server for UNIX".
+https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/
 
 ![image](https://user-images.githubusercontent.com/66677660/204316995-0c90a492-c6e2-4cd1-bbac-90e08050ac5e.png)
+![image](https://user-images.githubusercontent.com/66677660/204318928-4171d286-29ec-49cd-9cee-f0db550c12bb.png)
+
+# WSGI(Web Server Gateway Interface)
+> The Web Server Gateway Interface (WSGI) is a standard interface between web server software and web applications written in Python.
+
+https://www.liquidweb.com/kb/what-is-wsgi/
+
+# Nginx
+
+NGINX doesn't “know” how to run Python, so it needs a gateway to an environment that does.a more popular choice
+for communication between Python and NGINX is the Web Server Gateway Interface (WSGI)
+
+Nginx is a web server. It serves static files, however it cannot execute and host Python application.So,
+you need gateway between nginx and python where WSGI is an option. So, you mean, there must be at 
+least one WSGI compatible application server such as uWSGI or Gunicorn to run python web application with WSGI?
+
+Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
+
+concept of reverse proxy
+https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/
+
+![image](https://user-images.githubusercontent.com/66677660/204323833-6f52b2f7-8b4b-4125-bca6-dff8d54f6f1b.png)
+
+![image](https://user-images.githubusercontent.com/66677660/204323724-b389b348-38be-49d8-8b26-215baf66fee9.png)
+
+

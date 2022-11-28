@@ -138,13 +138,23 @@ https://www.educative.io/answers/how-to-render-data-in-django
 
 # gunicorn
 Gunicorn is detailed as "A Python WSGI HTTP Server for UNIX".
+Gunicorn is a WSGI server and we can run any web application using Gunicorn if it supports WSGI. 
+So, you can run not only your Django application, but you can also run, for example, Flask application 
+using Gunicorn because it also supports WSGI.
+
+WSGI is a protocol, it’s a standard of communication between a web server and a web application. 
+Basically, between Gunicorn and Flask or Django. The web server should know how to speak to the 
+web application, and the web application should know how to respond to the web server. They both 
+should talk using the same language. And the language is WSGI
+
 https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/
 
 ![image](https://user-images.githubusercontent.com/66677660/204316995-0c90a492-c6e2-4cd1-bbac-90e08050ac5e.png)
 ![image](https://user-images.githubusercontent.com/66677660/204318928-4171d286-29ec-49cd-9cee-f0db550c12bb.png)
 
 # WSGI(Web Server Gateway Interface)
-> The Web Server Gateway Interface (WSGI) is a standard interface between web server software and web applications written in Python.
+> The Web Server Gateway Interface (WSGI) is a standard interface between web server software 
+> and web applications written in Python.
 
 https://www.liquidweb.com/kb/what-is-wsgi/
 

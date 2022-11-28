@@ -135,3 +135,6 @@ https://www.javatpoint.com/django-database-migrations
 
 # Django render()
 https://www.educative.io/answers/how-to-render-data-in-django
+
+# WSGI(Web Server Gateway Interface)
+https://www.liquidweb.com/kb/what-is-wsgi/

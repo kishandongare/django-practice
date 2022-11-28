@@ -138,3 +138,7 @@ https://www.educative.io/answers/how-to-render-data-in-django
 
 # WSGI(Web Server Gateway Interface)
 https://www.liquidweb.com/kb/what-is-wsgi/
+
+# gunicorn
+
+![image](https://user-images.githubusercontent.com/66677660/204316564-ecaa9b4f-370b-4539-bc47-324027a573ef.png)

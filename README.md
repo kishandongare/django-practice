@@ -141,4 +141,4 @@ https://www.liquidweb.com/kb/what-is-wsgi/
 
 # gunicorn
 
-![image](https://user-images.githubusercontent.com/66677660/204316564-ecaa9b4f-370b-4539-bc47-324027a573ef.png)
+![image](https://user-images.githubusercontent.com/66677660/204316995-0c90a492-c6e2-4cd1-bbac-90e08050ac5e.png)

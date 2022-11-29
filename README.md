@@ -1,48 +1,53 @@
 # Django Practice
 
-1) Django is a Python-based web framework that allows you to quickly create efficient web applications.
+1) Django is a Python-based web framework that allows us to quickly create efficient web applications.
 
 2) Django provides built-in features for everything including Django Admin Interface, default database SQLlite3, etc. 
 
-3) When you’re building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc. 
+3) When we are building a website, we always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for our website django admin.
 
 # Why Django Framework ?
-1) Excellent documentation, high scalability Easiest Framework to learn, rapid development and Batteries fully included.
 
-2) Python has huge library and features such as Web Scrapping, Machine Learning, Image Processing, Scientific Computing, etc. One can integrate it all this with web application and do lots and lots of advance stuff.
+1) Easy Framework to learn, Excellent documentation, high scalability and rapid development.
+
+2) Python has huge library set and features such as Web Scrapping, Machine Learning, Image Processing, Scientific Computing, etc. One can integrate it all this with web application and do lots and lots of advance stuff.
 
 3) Used by Top MNCs and Companies, such as Instagram, Disqus, Spotify, Youtube, Bitbucket, Dropbox, etc. and the list is never-ending.
 
-# MVC Pattern
-Model View Controller or MVC as it is popularly called, is a software design pattern for developing web applications. A Model View Controller pattern is made up of the following three parts −
-
-Model − The lowest level of the pattern which is responsible for maintaining data.
-
-View − This is responsible for displaying all or a portion of the data to the user.
-
-Controller − Software Code that controls the interactions between the Model and View.
-
-MVC is popular as it isolates the application logic from the user interface layer and supports separation of concerns. Here the Controller receives all requests for the application and then works with the Model to prepare any data needed by the View. The View then uses the data prepared by the Controller to generate a final presentable response. The MVC abstraction can be graphically represented as follows.
-![image](https://user-images.githubusercontent.com/66677660/138484939-ef9ca7ce-e14a-40d3-887b-88aa71aad54d.png)
->The Model
-The model is responsible for managing the data of the application. It responds to the request from the view and it also responds to instructions from the controller to update itself.
-
->The View
-It means presentation of data in a particular format, triggered by a controller's decision to present the data. They are script-based templating systems like JSP, ASP, PHP and very easy to integrate with AJAX technology.
-
->The Controller
-The controller is responsible for responding to the user input and perform interactions on the data model objects. The controller receives the input, it validates the input and then performs the business operation that modifies the state of the data model.
-
-Struts2 is a MVC based framework.
 
 # MVT Pattern
+Django, a Python framework to create web applications, is based on Model-View-Template (MVT) architecture. MVT is a software design pattern for developing a web application. It consists of the following three entities:
 
-The Model-View-Template (MVT) is slightly different from MVC. In fact the main difference between the two patterns is that Django itself takes care of the Controller part (Software Code that controls the interactions between the Model and View), leaving us with the template. The template is a HTML file mixed with Django Template Language (DTL).
+1)Model
+2)View
+3)Template
 
-The following diagram illustrates how each of the components of the MVT pattern interacts with each other to serve a user request −
-![image](https://user-images.githubusercontent.com/66677660/138485489-395d1a7b-badd-4ecc-96cb-040e26b6beaa.png)
+# Model
+A Model is an object that defines the structure of the data in the Django application.
 
-The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user.
+It is responsible for maintaining the entire application’s data for which it provides 
+various mechanisms to add, update, read and delete the data in the database.
+
+# View
+A View is a handler function that accepts HTTP requests, processes them, and returns the HTTP response.
+
+It retrieves the necessary data to fulfill the request using Models and renders them on the user interface using Templates.
+
+It can also create an HTML page using an HTML template dynamically, and populate it with data fetched from the model.
+
+# Template
+
+A Template is a text file that defines the structure or layout of the user interface. 
+The text file can be any type of file; for example HTML, XML, etc.
+
+Control flow in MVT architecture
+![image](https://user-images.githubusercontent.com/66677660/204590322-df26fef4-96d0-45b9-bf6b-1b79909c2dce.png)
+
+>> The user interacts with a Django application using a URL that is passed to the MVT architecture. 
+>> A URL mapper is used to redirect the requests to the appropriate view based on the request URL.
+>> If an appropriate view is found, it will be invoked.
+>> The View will interact with the Model and retrieve the necessary data from the database via Model.
+>> The View will render an appropriate template along with the retrieved data to the user.
 
 # Installation of Django
 https://www.geeksforgeeks.org/django-introduction-and-installation/

@@ -19,7 +19,9 @@
 Django, a Python framework to create web applications, is based on Model-View-Template (MVT) architecture. MVT is a software design pattern for developing a web application. It consists of the following three entities:
 
 1)Model
+
 2)View
+
 3)Template
 
 # Model

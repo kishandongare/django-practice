@@ -46,9 +46,13 @@ Control flow in MVT architecture
 ![image](https://user-images.githubusercontent.com/66677660/204590322-df26fef4-96d0-45b9-bf6b-1b79909c2dce.png)
 
 >> The user interacts with a Django application using a URL that is passed to the MVT architecture. 
+
 >> A URL mapper is used to redirect the requests to the appropriate view based on the request URL.
+
 >> If an appropriate view is found, it will be invoked.
+
 >> The View will interact with the Model and retrieve the necessary data from the database via Model.
+
 >> The View will render an appropriate template along with the retrieved data to the user.
 
 # Installation of Django

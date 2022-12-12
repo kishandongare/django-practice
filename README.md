@@ -193,3 +193,4 @@ https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/
 # Static/media
 
 http://www.django.co.zw/en/tutorials/setting-django-s-static-and-media-urls/
+https://djangocentral.com/managing-media-files-in-django/

@@ -190,4 +190,4 @@ https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/
 
 ![image](https://user-images.githubusercontent.com/66677660/204323724-b389b348-38be-49d8-8b26-215baf66fee9.png)
 
-
+# Static/media

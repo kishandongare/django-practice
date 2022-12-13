@@ -11,7 +11,7 @@ nice, human redable representational of the the model form the __str__() method
 write this method in your own model class which is inside model.py file.
 
 
-
+'''
 from django.db import models
 class Person(models.Model):
 
@@ -22,3 +22,4 @@ class Person(models.Model):
     def __str__(self):
     
         return "{} {}" .formate(self.first_name, self.last_name)
+'''

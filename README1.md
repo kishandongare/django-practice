@@ -38,7 +38,7 @@ from .models import Movie
 class MovieForm(forms.ModelForm):
          class Meta:
              model = Movie
-             fields = 'first_name', 'last_name'] #We can select model objects for form
+             fields = ['first_name', 'last_name'] #We can select model objects for form
 ```
 
 or

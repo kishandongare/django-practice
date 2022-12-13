@@ -10,6 +10,8 @@ To display an object in Django admin site and Thus you should always return a
 nice, human redable representational of the the model form the __str__() method 
 write this method in your own model class which is inside model.py file.
 
+
+
 from django.db import models
 class Person(models.Model):
 

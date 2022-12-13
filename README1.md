@@ -55,7 +55,8 @@ class MovieForm(forms.ModelForm):
              fields = '__all__' # we can select all field object from model
 ```
         
-        
+ # Practice 
+ https://ordinarycoders.com/blog/article/django-modelforms
         
         
         

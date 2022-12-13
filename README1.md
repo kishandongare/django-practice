@@ -18,3 +18,6 @@ class Person(models.Model):
     def __str__(self):
           return "{} {}" .formate(self.first_name, self.last_name)
 ```
+
+# Meta Sub class
+https://www.geeksforgeeks.org/meta-class-in-models-django/

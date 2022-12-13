@@ -1,10 +1,10 @@
 # Django Concept:
 
-# >> __init__.py
+# ``` __init__.py ```
 
 The folder which contain init.py file is considered as python package.
 
-# >> def __str__()
+# ``` def __str__()```
 
 To display an object in Django admin site and Thus you should always return a 
 nice, human redable representational of the the model form the __str__() method 

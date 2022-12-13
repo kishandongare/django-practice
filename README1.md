@@ -24,9 +24,44 @@ https://www.geeksforgeeks.org/meta-class-in-models-django/
 
 # Form Meta Sub Class
 
+When we are making form field by using model field objects or The Meta class 
+is used to change the behavior of the ModelForm. Within it, specify the model 
+your fields come from and the fields you want to use from that model. 
 
 ```python
 class Meta:
         model = Movie
-        fields = ('first_name', 'last_name')
+        fields = 'first_name', 'last_name'] #We can select model objects for form
 ```
+or
+
+```python
+class Meta:
+        model = Movie
+        fields = '__all__' # we can select all field object from model
+```
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

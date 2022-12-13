@@ -19,5 +19,14 @@ class Person(models.Model):
           return "{} {}" .formate(self.first_name, self.last_name)
 ```
 
-# Meta Sub class
+# Model Meta Sub class
 https://www.geeksforgeeks.org/meta-class-in-models-django/
+
+# Form Meta Sub Class
+
+
+```python
+class Meta:
+        model = Movie
+        fields = ('first_name', 'last_name')
+```

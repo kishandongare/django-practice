@@ -20,6 +20,7 @@ class Person(models.Model):
 ```
 
 # Model Meta Sub class
+
 https://www.geeksforgeeks.org/meta-class-in-models-django/
 
 # Form Meta Sub Class
@@ -29,16 +30,29 @@ is used to change the behavior of the ModelForm. Within it, specify the model
 your fields come from and the fields you want to use from that model. 
 
 ```python
-class Meta:
-        model = Movie
-        fields = 'first_name', 'last_name'] #We can select model objects for form
+
+from django import forms
+from .models import Movie 
+# Create your forms here.
+
+class MovieForm(forms.ModelForm):
+         class Meta:
+             model = Movie
+             fields = 'first_name', 'last_name'] #We can select model objects for form
 ```
+
 or
 
 ```python
-class Meta:
-        model = Movie
-        fields = '__all__' # we can select all field object from model
+
+from django import forms
+from .models import Movie 
+# Create your forms here.
+
+class MovieForm(forms.ModelForm):
+         class Meta:
+             model = Movie
+             fields = '__all__' # we can select all field object from model
 ```
         
         

@@ -72,14 +72,22 @@ have to write the following code
 
 ```python
 from django.contrib import admin
-from .models import Book, Patron, Copy
+from .models import Book
 class BookAdmin(admin.ModelAdmin):
     list_display = ["title", "author", "published"]
-admin.site.register(Model class name, BookAdmin)
+admin.site.register(Book, BookAdmin)
 ```
+or  you can use the (django.contrib.admin.register) decorator to register 
+multiple models that using the same admin class.
         
-        
-        
+
+```python
+from django.contrib import admin
+from .models import Track
+@admin.register(Track)
+class TrackAdmin(admin.ModelAdmin):
+    list_display = ('title','artist')       
+```        
         
         
         

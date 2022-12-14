@@ -97,7 +97,9 @@ http://www.django.co.zw/en/tutorials/setting-django-s-static-and-media-urls/
 Never deploy a site into production with DEBUG turned on. To disable debug mode, 
 set DEBUG = False in your Django settings.py file.
 
+# load crispy_forms_tags in django
 
+https://ordinarycoders.com/blog/article/render-forms-with-django-crispy-forms
         
         
         

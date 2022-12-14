@@ -87,8 +87,17 @@ from .models import Track
 @admin.register(Track)
 class TrackAdmin(admin.ModelAdmin):
     list_display = ('title','artist')       
-```        
-        
+```
+# Media and Static File Setup
+
+http://www.django.co.zw/en/tutorials/setting-django-s-static-and-media-urls/
+
+# DEBUG = True
+
+Never deploy a site into production with DEBUG turned on. To disable debug mode, 
+set DEBUG = False in your Django settings.py file.
+
+
         
         
         

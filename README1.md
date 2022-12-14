@@ -57,14 +57,26 @@ class MovieForm(forms.ModelForm):
         
  # Practice 
  https://ordinarycoders.com/blog/article/django-modelforms
+ 
+ # Add model in django-admin
+ 
+ After successfully create model then you have to add model in django admin
+ 
+ ```python
+
+admin.site.register(model class name)        
         
-        
-        
-        
-        
-        
-        
-        
+```
+or if you want to show the field object in django admin interface the you 
+have to write the following code
+
+```python
+from django.contrib import admin
+from .models import Book, Patron, Copy
+class BookAdmin(admin.ModelAdmin):
+    list_display = ["title", "author", "published"]
+admin.site.register(Model class name, BookAdmin)
+```
         
         
         

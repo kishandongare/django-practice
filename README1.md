@@ -101,9 +101,9 @@ set DEBUG = False in your Django settings.py file.
 
 https://ordinarycoders.com/blog/article/render-forms-with-django-crispy-forms
         
-        
-        
-        
+# Django crispy forms(Bootstrap)
+
+https://ordinarycoders.com/blog/article/render-a-django-form-with-bootstrap
         
         
         

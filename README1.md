@@ -102,14 +102,13 @@ set DEBUG = False in your Django settings.py file.
 # Media and Static File Setup(settings.py and urls.py)
 
 1.STATIC_ROOT: 
-STATIC_ROOT is just the path to the directory where static files have been collected.In
-static/img
-      /css
-      /js
+
+It is just the path to the directory where static files have been collected.In
+static/img and css ,js folders are created to store them.
  
 2.STATIC_URL:
 
-STATIC_URL: It is simply the prefix of the URL that will be visible to 
+It is simply the prefix of the URL that will be visible to 
 the user while accessing the static files.
 
 Example: Suppose a user tries to access a static file named "mystatic.txt" of the shop app. 
@@ -122,11 +121,66 @@ Here, we have written(BASE_DIR, "media") which means that Django will create a
 folder named "media" under the base directory and all the media files will be 
 saved in the "media" folder.
 
-2.MEDIA_URL: 
+4.MEDIA_URL: 
 
 Similar to the STATIC_URL, it is also the prefix of the URL that 
 will be visible to the user while accessing the media files.
 
+settings.py
+
+```python
+import os
+#Open the (settings.py) file of the mac.
+#Type the below code at the end of the (settings.py) file:
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+```
+Download any image and save it as python.png in the media directory. 
+To access the file visit http://127.0.0.1:8000/media/python.png. 
+You will get an HTTP 404 error like this:
+
+But why?
+
+The problem is that Django development server doesn't serve media files by default. 
+To make Django development server serve static we have to add a URL pattern in sitewide urls.py file.
+
+First open urls.py in the Django project configuration directory and make a change.
+
+urls.py
+
+```python
+from django.urls import path,include
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('core.urls')),
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+```
+or 
+```python
+from django.urls import path,include
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('core.urls')),
+]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+Now visit http://127.0.0.1:8000/media/python.png again, this time you should be able to see the image.
+
+For more please visit the below site
 
 http://www.django.co.zw/en/tutorials/setting-django-s-static-and-media-urls/
 

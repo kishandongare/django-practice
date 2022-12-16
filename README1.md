@@ -101,6 +101,33 @@ set DEBUG = False in your Django settings.py file.
 
 # Media and Static File Setup(settings.py and urls.py)
 
+1.STATIC_ROOT: 
+STATIC_ROOT is just the path to the directory where static files have been collected.In
+static/img
+      /css
+      /js
+ 
+2.STATIC_URL:
+
+STATIC_URL: It is simply the prefix of the URL that will be visible to 
+the user while accessing the static files.
+
+Example: Suppose a user tries to access a static file named "mystatic.txt" of the shop app. 
+Then, he or she will access the file at http://127.0.0.1:8000/static/shop/mystatic.txt. 
+ 
+3.MEDIA_ROOT: 
+
+It is the path to the directory in which all the media files will be saved. 
+Here, we have written(BASE_DIR, "media") which means that Django will create a 
+folder named "media" under the base directory and all the media files will be 
+saved in the "media" folder.
+
+2.MEDIA_URL: 
+
+Similar to the STATIC_URL, it is also the prefix of the URL that 
+will be visible to the user while accessing the media files.
+
+
 http://www.django.co.zw/en/tutorials/setting-django-s-static-and-media-urls/
 
 # load crispy_forms_tags in django

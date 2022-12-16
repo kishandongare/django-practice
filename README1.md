@@ -165,6 +165,7 @@ if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 ```
 or 
+
 ```python
 from django.urls import path,include
 from django.conf import settings
@@ -177,6 +178,8 @@ urlpatterns = [
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+```
 
 Now visit http://127.0.0.1:8000/media/python.png again, this time you should be able to see the image.
 

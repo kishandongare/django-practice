@@ -27,17 +27,21 @@ But in c++ our program is object orianted approach.
 # ```Class```
 
 >>Class is a blueprint or templates from which objects are created.
+
 >>Class is a group of similar objects.
+
 >>Class doesn't allocated memory when it is created.
 
 # ```__init__```
 
 >>The init method or function is similar to constructor in c++ and java.
+
 >>When we create objects of class it is automatic called.
 
 # ```self```
 
 >> By using the self keyworld we can access the attributes and function of the class in program.
+
 >> It is a first parameter of any function.
 
 ```python
@@ -55,18 +59,20 @@ p.say_hi()
 # ```Polymorphism```
 
 >> The term "Polymorphism" is the combination of "poly" and "morphs" which means many forms.
+
 >> Example: The + operator in is used to perform two specific operations
 
 ![image](https://user-images.githubusercontent.com/66677660/208247018-519d4931-3609-47e8-9069-bc7fba9451cf.png)
 
-1.When it is used with numbers, it performs additions
+ 1.When it is used with numbers, it performs additions
+
 ```python
 a=5
 b=6
 print(a+b)
 ```
 
-2. When we use the  + operator with string it performs string concatenation
+2.When we use the  + operator with string it performs string concatenation
 
 ```python
 firstname = "kishan"

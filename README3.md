@@ -73,16 +73,48 @@ firstname = "kishan"
 lastname = "dongare"
 print(firstname+lastname)
 ```
+# Function Overloading
 
+Function overloading is defined as the process of having two or more functions with the same name,
+but different in parameters (argument) is known as function overloading in c++.
 
+```c++
 
+#include<iostream.h>
+using namespace std;
+int sum(int num1, int num2)
+{  
+   return num1+num2;
+}
+double sum(double num1, double num2)
+{  
+   return num1+num2;
+}
+int sum(int num1, int num2, int num3)
+{  
+   return num1+num2+num3;
+}
+int main()
+{
+cout<<"sum1 = "<<sum(5,6)<<endl;
+cout<<"sum2 = "<<sum(5.5,6.8)<<endl;
+cout<<"sum3 = "<<sum(5,6,7)<<endl;
+return 0;
+}
+```
 
+python does not support method overloading by default.
 
-
-
-
-
-
+```python
+def product(a,b):
+   p = a*b
+   print(p)
+def product(a,b, c):
+   p = a*b*c
+   print(p)
+product(3,4,5) # this line will call second product function
+```
+Note:When we pass 2 argument It will through error( Type error)
 
 
 

@@ -194,10 +194,48 @@ https://ordinarycoders.com/blog/article/render-forms-with-django-crispy-forms
 # Django crispy forms(Bootstrap)
 
 https://ordinarycoders.com/blog/article/render-a-django-form-with-bootstrap
-        
-        
-        
-        
+
+Fiels in Django
+
+# null = True (default = False)
+
+A null value indicates a lack of a value, which is not the same thing as a value of zero. 
+For example, consider the question "How many books does Adam own?" The answer may be "zero" 
+(we know that he owns none) or "null" (we do not know how many he owns).
+
+A null value is used when the value in a column is unknown or missing. 
+A null is neither an empty string (for character or datetime data types) 
+nor a zero value (for numeric data types).
+
+# Blank = True (default = False)
+
+blank determines whether the field will be required in forms. 
+This includes the admin and your custom forms. If blank=True then the field will not be required, 
+whereas if it's False the field cannot be blank
+
+# Choice
+
+
+
+# Validation 
+
+One can apply any type of operation on value now. 
+so let us check if our function value contains @gmail.com to be validated for google mail IDs only
+
+```python   
+from django.db import models
+# importing validationerror
+from django.core.exceptions import ValidationError
+# creating a validator function
+def validate_geeks_mail(value):
+	if "@gmail.com" in value:
+		return value
+	else:
+		raise ValidationError("This field accepts mail id of google only")
+# Create your models here.
+class GeeksModel(models.Model):
+	geeks_mail = models.CharField(max_length = 200,validators =[validate_geeks_mail] )
+```     
         
         
         

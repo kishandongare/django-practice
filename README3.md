@@ -10,10 +10,15 @@ But in c++ our program is object orianted approach.
 # ```Oops Provides some concept(Feature):```
 
 1.Object
+
 2.Class
+
 3.Polymorphism
+
 4.Encapsulation
+
 5.Abstraction
+
 6.Inheritance
 
 # ```Object```

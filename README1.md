@@ -187,6 +187,10 @@ For more please visit the below site
 
 http://www.django.co.zw/en/tutorials/setting-django-s-static-and-media-urls/
 
+# Field (Django Form Fields, Widgets, and Attributes)
+
+https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets
+
 # load crispy_forms_tags in django
 
 https://ordinarycoders.com/blog/article/render-forms-with-django-crispy-forms

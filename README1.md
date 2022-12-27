@@ -248,6 +248,7 @@ https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/
 
 ```
 or We can create directly forms.ModeForm	
+
 # ModelForm
 
 ```python
@@ -262,3 +263,5 @@ class MovieForm(forms.ModelForm):
         model = Movie #model name
         fields = '__all__'  
 ```
+# Widget
+https://docs.djangoproject.com/en/4.1/ref/forms/widgets/#:~:text=A%20widget%20is%20Django's%20representation,DOCTYPE%20html%3E%20.

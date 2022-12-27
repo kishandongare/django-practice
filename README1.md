@@ -240,6 +240,25 @@ def validate_geeks_mail(value):
 class GeeksModel(models.Model):
 	geeks_mail = models.CharField(max_length = 200,validators =[validate_geeks_mail] )
 ```     
-        
-        
-        
+
+
+# Models and Forms field
+```
+https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/
+
+```
+or We can create directly forms.ModeForm	
+# ModelForm
+
+```python
+# forms.py
+
+from django import forms
+from .models import Movie 
+
+# Create your forms here.
+class MovieForm(forms.ModelForm):
+    class Meta:
+        model = Movie #model name
+        fields = '__all__'  
+```

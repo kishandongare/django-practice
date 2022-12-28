@@ -239,7 +239,7 @@ object.func2()
 
 ```
 
-Multilevel
+Multilevel Inheritance
 
 ```python
 # Base class

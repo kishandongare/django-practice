@@ -23,10 +23,14 @@ But in c++ our program is object orianted approach.
 
 # ```Object```
 
->> Object is a real world entity such as pen, cae, mobile.
+>> Object is a real world entity such as pen,laptop, mobile.
+
 >> Object is an instance of a class.
+
 >> Object is created many times as per requrement.
+
 >> Object allocated memory when it is created.
+
 >> Example: class->Human and Object -> Man, Woman
 
 # ```Class```
@@ -65,7 +69,7 @@ p.say_hi()
 
 >> The term "Polymorphism" is the combination of "poly" and "morphs" which means many forms.
 
->> Example: The + operator in is used to perform two specific operations
+>> Example: The + operator is used to perform two specific operations
 
 ![image](https://user-images.githubusercontent.com/66677660/208247018-519d4931-3609-47e8-9069-bc7fba9451cf.png)
 
@@ -120,17 +124,62 @@ python does not support method overloading by default.
 def product(a,b):
    p = a*b
    print(p)
-def product(a,b, c):
+def product(a,b,c):
    p = a*b*c
    print(p)
 product(3,4,5) # this line will call second product function
 ```
 Note:When we pass 2 argument It will through error( Type error)
 
+# Operator Overloading
 
+Operator overloading is a compile-time polymorphism. Polymorphism allows 
+the same operator name or symbol to be used for multiple operations.
 
+```python
 
+# Python program to show use of
+# + operator for different purposes.
+ 
+print(1 + 2)
+ 
+# concatenate two strings
+print("Geeks"+"For")
+ 
+# Product two numbers
+print(3 * 4)
+ 
+# Repeat the String
+print("Geeks"*4)
 
+```
+# functon overriding
+
+If derived class defines same function as defined in its base class, it is known as function overriding.
+
+```python
+class parent:    #base class
+    def __init__(self):
+        self.value = "Inside Parent"
+    def show(self):  
+        print(self.value)
+class child(parent): #derived class
+    def __init__(self):
+        self.value = "Inside Child"
+    def show(self):     
+        print(self.value)
+ob = child()
+ob1 = parent()
+ob.show()
+ob1.show()      
+
+```
+# Encapsulation
+>> Wrapping up of data and function into a single unit is known as encapsulaton.
+
+>> encapsulation is a process of wrapping similar code in one place.
+
+>>We can implement encapsulation by using access specifiers.(Private, Public, Protected)
 
 
 

@@ -175,6 +175,7 @@ ob1.show()
 
 ```
 # Encapsulation
+
 >> Wrapping up of data and function into a single unit is known as encapsulaton.
 
 >> encapsulation is a process of wrapping similar code in one place.
@@ -182,4 +183,146 @@ ob1.show()
 >>We can implement encapsulation by using access specifiers.(Private, Public, Protected)
 
 
+# Abstraction
+
+>>Data abstraction refers to providing only essential information 
+to the outside world and hiding their background details.
+
+>>It give the programmer to control on what data or function 
+are to be made visible to the user and what are kept secret.
+
+```c++
+
+#include<iostream.h>
+#include<math.h>
+int main()
+{
+int n = 4;
+int power = 3;
+int result = pow(n,power);
+cout<<"cube of n is :"<<result;
+return 0;
+}
+
+```
+# Inheritance
+
+>>Inheritance provides code reusability to program.
+
+>>We do not have to write same code again and again, 
+we can just inherit the propertice we need in child class.
+
+Single Inheritance: 
+
+```python
+
+# Python program to demonstrate
+# single inheritance
+
+# Base class
+class Parent:
+	def func1(self):
+		print("This function is in parent class.")
+
+# Derived class
+
+
+class Child(Parent):
+	def func2(self):
+		print("This function is in child class.")
+
+
+# Driver's code
+object = Child()
+object.func1()
+object.func2()
+
+```
+
+Multilevel
+
+```python
+# Base class
+
+class Vehicle:
+    def Vehicle_info(self):
+        print('Inside Vehicle class')
+
+# Child class
+class Car(Vehicle):
+    def car_info(self):
+        print('Inside Car class')
+
+# Child class
+class SportsCar(Car):
+    def sports_car_info(self):
+        print('Inside SportsCar class')
+
+# Create object of SportsCar
+s_car = SportsCar()
+
+s_car.Vehicle_info()
+s_car.car_info()
+s_car.sports_car_info()
+
+```
+Multiple Inheritance
+
+```python
+class SuperClass1:
+    num1 = 3
+
+class SuperClass2:
+    num2 = 5
+
+class SubClass( SuperClass1, SuperClass2):
+    def addition(self):
+        return self.num1 + self.num2
+
+obj = SubClass()
+print(obj.addition())
+
+```
+
+Hierarchical Inheritance
+
+```python
+
+class Parent:
+      def func1(self):
+          print("this is function 1")
+class Child(Parent):
+      def func2(self):
+          print("this is function 2")
+class Child2(Parent):
+      def func3(self):
+          print("this is function 3")
+ 
+ob = Child()
+ob1 = Child2()
+ob.func1()
+ob.func2()
+```
+Hybrid Inheritance
+
+```python
+class Parent:
+     def func1(self):
+         print("this is function one")
+ 
+class Child(Parent):
+     def func2(self):
+         print("this is function 2")
+ 
+class Child1(Parent):
+     def func3(self):
+         print(" this is function 3"):
+ 
+class Child3(Parent , Child1):
+     def func4(self):
+         print(" this is function 4")
+ 
+ob = Child3()
+ob.func1()
+```
 

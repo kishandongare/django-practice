@@ -237,10 +237,6 @@ class MovieForm(forms.ModelForm):
              fields = '__all__' # we can select all field object from model
 ```
 
-# Field (Django Form Fields, Widgets, and Attributes)
-
-https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets
-
 # load crispy_forms_tags in django
 
 https://ordinarycoders.com/blog/article/render-forms-with-django-crispy-forms
@@ -252,6 +248,7 @@ https://ordinarycoders.com/blog/article/render-a-django-form-with-bootstrap
 # Choice(models)
 
 Choice concept1 : https://simpleisbetterthancomplex.com/tutorial/2019/01/02/how-to-implement-grouped-model-choice-field.html
+
 Choice concept1 : https://www.codingninjas.com/codestudio/library/how-to-use-django-field-choices
 
 # Widget(forms)
@@ -263,10 +260,12 @@ that is appropriate to the type of data that is to be displayed.
 A widget is Django’s representation of an HTML input element. The widget handles the rendering of the HTML, 
 and the extraction of data from a GET/POST dictionary that corresponds to the widget.
 
-shorturl.at/achkn
-
 ```
+Widget : https://www.geeksforgeeks.org/django-form-field-custom-widgets/
 
+# Field (Django Form Fields, Widgets, and Attributes)
+
+https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets
 
 
 

@@ -1,5 +1,17 @@
 # Django Concept:
 
+
+# What is a Django model?
+
+```
+Think of a Django model as a blueprint.
+Each model is comprised of Django model fields that require user input.
+Once the user completes the required fields, a model object is saved in the database.
+The model's information is then accessible via a queryset, a callable collection of the model objects.
+
+```
+Model : https://ordinarycoders.com/blog/article/django-models
+
 # ``` __init__.py ```
 
 The folder which contain init.py file is considered as python package.
@@ -11,54 +23,36 @@ nice, human redable representational of the the model form the __str__() method
 write this method in your own model class which is inside model.py file.
 
 ```python
+
 from django.db import models
 class Person(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     def __str__(self):
           return "{} {}" .formate(self.first_name, self.last_name)
+
 ```
+# null = True (default = False) [models]
+
+A null value indicates a lack of a value, which is not the same thing as a value of zero. 
+For example, consider the question "How many books does Adam own?" The answer may be "zero" 
+(we know that he owns none) or "null" (we do not know how many he owns).
+
+A null value is used when the value in a column is unknown or missing. 
+A null is neither an empty string (for character or datetime data types) 
+nor a zero value (for numeric data types).
+
+# Blank = True (default = False) [models]
+
+blank determines whether the field will be required in forms. 
+This includes the admin and your custom forms. If blank=True then the field will not be required, 
+whereas if it's False the field cannot be blank
 
 # Model Meta (Sub class)
 
 https://www.geeksforgeeks.org/meta-class-in-models-django/
 
-# Form Meta Sub Class
-
-When we are making form field by using model field objects or The Meta class 
-is used to change the behavior of the ModelForm. Within it, specify the model 
-your fields come from and the fields you want to use from that model. 
-
-```python
-
-from django import forms
-from .models import Movie 
-# Create your forms here.
-
-class MovieForm(forms.ModelForm):
-         class Meta:
-             model = Movie
-             fields = ['first_name', 'last_name'] #We can select model objects for form
-```
-
-or
-
-```python
-
-from django import forms
-from .models import Movie 
-# Create your forms here.
-
-class MovieForm(forms.ModelForm):
-         class Meta:
-             model = Movie
-             fields = '__all__' # we can select all field object from model
-```
-        
- # Practice 
- https://ordinarycoders.com/blog/article/django-modelforms
- 
- # Add model in django-admin
+# Add model in django-admin
  
  After successfully create model then you have to add model in django admin
  
@@ -99,7 +93,7 @@ settings (from settings.py).
 Never deploy a site into production with DEBUG turned on. To disable debug mode, 
 set DEBUG = False in your Django settings.py file.
 
-# Media and Static File Setup(settings.py and urls.py)
+# Media and Static File Setup (settings.py and urls.py)
 
 1.STATIC_ROOT: 
 
@@ -187,61 +181,6 @@ For more please visit the below site
 
 http://www.django.co.zw/en/tutorials/setting-django-s-static-and-media-urls/
 
-# Field (Django Form Fields, Widgets, and Attributes)
-
-https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets
-
-# load crispy_forms_tags in django
-
-https://ordinarycoders.com/blog/article/render-forms-with-django-crispy-forms
-        
-# Django crispy forms(Bootstrap)
-
-https://ordinarycoders.com/blog/article/render-a-django-form-with-bootstrap
-
-Fiels in Django
-
-# null = True (default = False)
-
-A null value indicates a lack of a value, which is not the same thing as a value of zero. 
-For example, consider the question "How many books does Adam own?" The answer may be "zero" 
-(we know that he owns none) or "null" (we do not know how many he owns).
-
-A null value is used when the value in a column is unknown or missing. 
-A null is neither an empty string (for character or datetime data types) 
-nor a zero value (for numeric data types).
-
-# Blank = True (default = False)
-
-blank determines whether the field will be required in forms. 
-This includes the admin and your custom forms. If blank=True then the field will not be required, 
-whereas if it's False the field cannot be blank
-
-# Choice
-
-
-
-# Validation 
-
-One can apply any type of operation on value now. 
-so let us check if our function value contains @gmail.com to be validated for google mail IDs only
-
-```python   
-from django.db import models
-# importing validationerror
-from django.core.exceptions import ValidationError
-# creating a validator function
-def validate_geeks_mail(value):
-	if "@gmail.com" in value:
-		return value
-	else:
-		raise ValidationError("This field accepts mail id of google only")
-# Create your models here.
-class GeeksModel(models.Model):
-	geeks_mail = models.CharField(max_length = 200,validators =[validate_geeks_mail] )
-```     
-
-
 # Models and Forms field
 ```
 https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/
@@ -249,7 +188,7 @@ https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/
 ```
 or We can create directly forms.ModeForm	
 
-# ModelForm
+ # ModelForm
 
 ```python
 # forms.py
@@ -263,6 +202,58 @@ class MovieForm(forms.ModelForm):
         model = Movie #model name
         fields = '__all__'  
 ```
+
+Modelforms : https://ordinarycoders.com/blog/article/django-modelforms
+
+# Form Meta (Sub Class)
+
+When we are making form field by using model field objects or The Meta class 
+is used to change the behavior of the ModelForm. Within it, specify the model 
+your fields come from and the fields you want to use from that model. 
+
+```python
+
+from django import forms
+from .models import Movie 
+# Create your forms here.
+
+class MovieForm(forms.ModelForm):
+         class Meta:
+             model = Movie
+             fields = ['first_name', 'last_name'] #We can select model objects for form
+```
+
+or
+
+```python
+
+from django import forms
+from .models import Movie 
+# Create your forms here.
+
+class MovieForm(forms.ModelForm):
+         class Meta:
+             model = Movie
+             fields = '__all__' # we can select all field object from model
+```
+
+# Field (Django Form Fields, Widgets, and Attributes)
+
+https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets
+
+# load crispy_forms_tags in django
+
+https://ordinarycoders.com/blog/article/render-forms-with-django-crispy-forms
+        
+# Django crispy forms(Bootstrap)
+
+https://ordinarycoders.com/blog/article/render-a-django-form-with-bootstrap
+
+# Choice(models)
+
+Choice concept1 : https://simpleisbetterthancomplex.com/tutorial/2019/01/02/how-to-implement-grouped-model-choice-field.html
+Choice concept1 : https://www.codingninjas.com/codestudio/library/how-to-use-django-field-choices
+
 # Widget(forms)
 
 ```

@@ -19,7 +19,7 @@ class Person(models.Model):
           return "{} {}" .formate(self.first_name, self.last_name)
 ```
 
-# Model Meta Sub class
+# Model Meta (Sub class)
 
 https://www.geeksforgeeks.org/meta-class-in-models-django/
 
@@ -263,5 +263,21 @@ class MovieForm(forms.ModelForm):
         model = Movie #model name
         fields = '__all__'  
 ```
-# Widget
-https://docs.djangoproject.com/en/4.1/ref/forms/widgets/#:~:text=A%20widget%20is%20Django's%20representation,DOCTYPE%20html%3E%20.
+# Widget(forms)
+
+```
+Whenever you specify a field on a form, Django will use a default widget 
+that is appropriate to the type of data that is to be displayed. 
+
+A widget is Django’s representation of an HTML input element. The widget handles the rendering of the HTML, 
+and the extraction of data from a GET/POST dictionary that corresponds to the widget.
+
+shorturl.at/achkn
+
+```
+
+
+
+
+
+

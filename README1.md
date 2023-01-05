@@ -267,7 +267,8 @@ Widget : https://www.geeksforgeeks.org/django-form-field-custom-widgets/
 
 https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets
 
+# How to create superuser in Django?
 
-
+https://www.geeksforgeeks.org/how-to-create-superuser-in-django/
 
 

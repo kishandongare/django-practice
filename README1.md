@@ -271,4 +271,6 @@ https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets
 
 https://www.geeksforgeeks.org/how-to-create-superuser-in-django/
 
+# DTL(Django Template Language)
 
+https://www.askpython.com/django/django-templates
